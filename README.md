@@ -3,7 +3,7 @@
 
 Este es el repositorio del video de tiktok donde mostre como crear una tarjeta por si tienen alguna duda de como realizarlo...
 
-![Logo](card/img/card.jpeg)
+![Logo](img/bochi.PNG)
 
 
 ## Demo
