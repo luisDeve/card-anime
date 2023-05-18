@@ -1,0 +1,89 @@
+:root{
+  --colorFondo:#d84ca1;
+  --colorTexto:#fff;
+  --colorGradiante:#b94e8a;
+  --coloGradiante2:#ffd7f1;
+}
+body{
+  background: var(--colorFondo);
+  overflow: hidden;
+  min-width: 1000vh;
+}
+.container__tarjeta{
+  background: var(--coloGradiante2);
+  background: linear-gradient(180deg, var(--coloGradiante2),var(--colorGradiante));
+  margin-top: 7rem;
+  width: 56rem;
+  height: 32rem;
+  cursor: pointer;
+  border-radius: .5rem;
+  transition: 0.5s;
+  display: inline-block;
+}
+.container__tarjeta:hover{
+  transform: translateY(-0.625rem);
+}
+.container__cover{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  position: relative;
+}
+.container__nombre{
+  font-size: 3.5rem;
+  color: var(--colorTexto);
+}
+.container__descripcion{
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--colorTexto);
+}
+.container__image{
+  max-width: 100%;
+  position: relative;
+  bottom: 6rem;
+  left: 11rem;
+}
+.bocchi{
+  width: 81%;
+  object-fit: cover;
+}
+@media (max-width:780px) {
+  .container__tarjeta{
+
+    width: 22rem;
+    height: 32rem;
+  }
+  .container__nombre{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .container__descripcion{
+    font-size: 1.5rem;
+  }
+  .container__cover{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .container__image{
+    grid-row: 1/1;
+  }
+  .bocchi{
+    width: 60%;
+
+  }
+  .container__image{
+    max-width: 100%;
+    position: relative;
+    bottom: 8rem;
+    left: 4rem;
+  }
+  .container__descripcion{
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .container__texto{
+    overflow: hidden;
+    height: 20rem;
+    position: absolute;
+    top: 14rem;
+  }
+}
